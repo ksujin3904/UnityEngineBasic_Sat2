@@ -22,6 +22,8 @@ void SayHello()
     return; // void 반환 하는 함수의 가장 마지막 라인의 return은 생략 가능.
 }
 
+SayHello();
+
 int result = 0;
 // 함수 호출
 // 함수이름(인자1, 인자2...)
