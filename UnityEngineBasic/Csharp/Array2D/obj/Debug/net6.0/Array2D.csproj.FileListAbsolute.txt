@@ -1,0 +1,15 @@
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\bin\Debug\net6.0\Array2D.exe
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\bin\Debug\net6.0\Array2D.deps.json
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\bin\Debug\net6.0\Array2D.runtimeconfig.json
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\bin\Debug\net6.0\Array2D.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\bin\Debug\net6.0\Array2D.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\obj\Debug\net6.0\Array2D.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\obj\Debug\net6.0\Array2D.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\obj\Debug\net6.0\Array2D.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\obj\Debug\net6.0\Array2D.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\obj\Debug\net6.0\Array2D.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\obj\Debug\net6.0\Array2D.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\obj\Debug\net6.0\refint\Array2D.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\obj\Debug\net6.0\Array2D.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\obj\Debug\net6.0\Array2D.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\Array2D\obj\Debug\net6.0\ref\Array2D.dll

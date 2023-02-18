@@ -25,10 +25,14 @@ namespace ClassObjectInstance
         public float Height;
         public float Weight;
         public char Gender;
-
+        
         public void SayMyName()
         {
-            Console.WriteLine($"나는 {Name}...");
+            // this 키워드
+            // 객체 자기자신의 참조를반환하는 키워드
+            // 함수 호출스택 쌓을 때 멤버참조를 했던 대상인 객체의 참조를 가짐
+
+            Console.WriteLine($"나는 {this.Name}...");
         }
 
         public void SayMyInfo()
