@@ -1,0 +1,15 @@
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\bin\Debug\net6.0\HorseRacing.exe
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\bin\Debug\net6.0\HorseRacing.deps.json
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\bin\Debug\net6.0\HorseRacing.runtimeconfig.json
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\bin\Debug\net6.0\HorseRacing.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\bin\Debug\net6.0\HorseRacing.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\obj\Debug\net6.0\HorseRacing.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\obj\Debug\net6.0\HorseRacing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\obj\Debug\net6.0\HorseRacing.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\obj\Debug\net6.0\HorseRacing.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\obj\Debug\net6.0\HorseRacing.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\obj\Debug\net6.0\HorseRacing.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\obj\Debug\net6.0\refint\HorseRacing.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\obj\Debug\net6.0\HorseRacing.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\obj\Debug\net6.0\HorseRacing.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasic_Sat2\UnityEngineBasic\Csharp\HorseRacing\obj\Debug\net6.0\ref\HorseRacing.dll

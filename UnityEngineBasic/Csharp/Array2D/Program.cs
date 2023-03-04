@@ -121,18 +121,4 @@ while(true)
 }
 
 // 칸도 입력하기
-while (true)
-{
-    Console.WriteLine("플레이어 이동방향을 입력하세요: l / r / u / d");
-    string input1 = Console.ReadLine();
-    if (input1.Equals("l")) MoveLeft();
-    else if (input1.Equals("r")) MoveRight();
-    else if (input1.Equals("u")) MoveUp();
-    else if (input1.Equals("d")) MoveDown();
-    else Console.WriteLine("잘못된 입력입니다. l / r / u / d");
-    while (true)
-    {
-        Console.WriteLine("플레이어 이동 크기를 입력하세요: 정수형만");
-              
-    }
-}
+    
