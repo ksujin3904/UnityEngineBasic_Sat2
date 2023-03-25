@@ -7,7 +7,7 @@ using System.Collections.Generic;
 // 1. 탐색, 삽입, 삭제 알고리즘
 // 2. 현재자료개수
 
-#region 동적 배열
+#region Dynamic Array
 MyDynamicArray myDynamicArray = new MyDynamicArray();
 myDynamicArray.Add(5);
 myDynamicArray.Add(1);
@@ -62,7 +62,7 @@ arrayList.Add('d');
 arrayList.Add("안녕");
 #endregion
 
-#region: Generic 동적배열
+#region: Generic DynamicArray
 
 MyDynamicArray<double> doubleArray = new MyDynamicArray<double>();
 doubleArray.Add(3.0);
@@ -83,7 +83,7 @@ enumerator.Dispose();
 enumerator.Reset();
 
 // foreach문
-// foreach (순회할 자료형 현재값변수 in Ienumerable)
+// foreach (순회할 자료형 현재값변수 in Ienumerable) -> current 반환
 Console.WriteLine();
 Console.WriteLine("Start enuemrating Generic MyDynamic Array with foreach loop");
 foreach (double item in doubleArray)
@@ -103,3 +103,57 @@ foreach (double item in doubleList)
 }
 
 #endregion
+
+#region Generic Linkedlist
+// 내가 만든 Generic LinkedList
+//------------------------------------------------------
+MyLinkedList<int> intLinkedList = new MyLinkedList<int>();
+intLinkedList.AddLast(2);
+intLinkedList.AddLast(3);
+intLinkedList.AddFirst(5);
+MyLinkedList<int> dummy = intLinkedList.FindLast(5);
+intLinkedList.AddAfter(dummy, 6);
+
+foreach (MyLinkedList<int> node in intLinkedList)
+{
+    Console.WriteLine($"내 연결리스트 순회중...{value}");
+}
+
+// C# System.colections.Generic.LinkedList
+// ------------------------------------------------------
+LinkedList<float> floatLinkedList = new LinkedList<float>();
+floatLinkedList.AddFirst(3);
+LinkedListNode<float>?dummy2 = floatLinkedList.FindLast(3);
+floatLinkedList.AddAfter(dummy2, 5);
+
+
+#endregion
+
+#region Generic Dictionary
+// 내가 만든 Generic Dictionary
+// ------------------------------------------------------
+MyDictionary<string, int> scores = new MyDictionary<string, int>();
+scores.Add("철수", 80);
+scores.Add("영희", 70);
+scores.Remove("영희");
+Console.WriteLine($"철수의 점수는 { scores["철수"]}점 이다.");
+
+// C#에서 제공하는 Dictionary: System.Collections.Generic.Dictionary
+// ------------------------------------------------------
+Dictionary<string, int> grades = new Dictionary<string, int>();
+grades.Add("철수", 'A');
+grades.Add("영희", 'C');
+grades.Remove("영희");
+
+foreach (string key in grades.Keys)
+{
+    Console.WriteLine($"학급생{key}");
+}
+
+foreach (char value in grades.Values)
+{
+    Console.WriteLine($"등급표{value}");
+}
+
+#endregion
+
