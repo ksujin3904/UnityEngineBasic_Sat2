@@ -104,56 +104,91 @@ foreach (double item in doubleList)
 
 #endregion
 
-#region Generic Linkedlist
-// 내가 만든 Generic LinkedList
-//------------------------------------------------------
+#region Generic LinkedList
+// 내가만든 Generic LinkedList
+//--------------------------------------------------------------
 MyLinkedList<int> intLinkedList = new MyLinkedList<int>();
 intLinkedList.AddLast(2);
 intLinkedList.AddLast(3);
 intLinkedList.AddFirst(5);
-MyLinkedList<int> dummy = intLinkedList.FindLast(5);
+MyLinkedListNode<int> dummy = intLinkedList.FindLast(5);
 intLinkedList.AddAfter(dummy, 6);
 
-foreach (MyLinkedList<int> node in intLinkedList)
+foreach (int value in intLinkedList)
 {
-    Console.WriteLine($"내 연결리스트 순회중...{value}");
+    Console.WriteLine($"내 연결리스트 순회중... {value} ");
 }
 
-// C# System.colections.Generic.LinkedList
-// ------------------------------------------------------
+// C# System.Collections.Generic.LinkedList
+//---------------------------------------------------------------
 LinkedList<float> floatLinkedList = new LinkedList<float>();
 floatLinkedList.AddFirst(3);
-LinkedListNode<float>?dummy2 = floatLinkedList.FindLast(3);
+LinkedListNode<float>? dummy2 = floatLinkedList.FindLast(3);
 floatLinkedList.AddAfter(dummy2, 5);
-
-
 #endregion
 
 #region Generic Dictionary
-// 내가 만든 Generic Dictionary
-// ------------------------------------------------------
+// 내가만든 Generic Dictionary
+//---------------------------------------------------------------
 MyDictionary<string, int> scores = new MyDictionary<string, int>();
 scores.Add("철수", 80);
 scores.Add("영희", 70);
 scores.Remove("영희");
-Console.WriteLine($"철수의 점수는 { scores["철수"]}점 이다.");
+Console.WriteLine(scores["철수"]);
 
-// C#에서 제공하는 Dictionary: System.Collections.Generic.Dictionary
-// ------------------------------------------------------
-Dictionary<string, int> grades = new Dictionary<string, int>();
+// C# System.Collections.Generic.Dictioanry
+//---------------------------------------------------------------
+Dictionary<string, char> grades = new Dictionary<string, char>();
 grades.Add("철수", 'A');
 grades.Add("영희", 'C');
 grades.Remove("영희");
 
+foreach (KeyValuePair<string, char> grade in grades)
+{
+    Console.WriteLine($"{grade.Key} 의 등급 : {grade.Value}");
+}
+
 foreach (string key in grades.Keys)
 {
-    Console.WriteLine($"학급생{key}");
+    Console.WriteLine($"학급생 {key}");
 }
 
 foreach (char value in grades.Values)
 {
-    Console.WriteLine($"등급표{value}");
+    Console.WriteLine($"등급표 {value}");
+}
+#endregion
+
+#region Queue
+
+Queue<string> queue = new Queue<string>();
+// 아이템 추가
+queue.Enqueue("철수");
+queue.Enqueue("영희");
+queue.Enqueue("미영");
+// 가장 먼저 추가된 아이템 반환
+Console.WriteLine(queue.Peek());
+while (queue.Count > 0)
+{
+    // 가장 먼저 추가된 아이템 제거 및 제거된 아이템 반환
+    Console.WriteLine(queue.Dequeue());
 }
 
 #endregion
 
+#region Stack
+
+Stack<int> stack = new Stack<int>();
+// 아이템 추가
+stack.Push(1);
+stack.Push(5);
+stack.Push(3);
+// 가장 늦게 추가된 아이템 반환
+Console.WriteLine(stack.Peek());
+while (stack.Count > 0)
+{
+    // 가장 늦게 추가된 아이템 제거 및 제거된 아이템 반환
+    Console.WriteLine(stack.Pop());
+}
+
+#endregion
