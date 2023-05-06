@@ -5,18 +5,18 @@ using UnityEngine;
 public class GoalLine : MonoBehaviour
 {
     /// <summary>
-    /// Mask: Æ¯Á¤ ºÎºĞÀº °¨Ãß°í Æ¯Á¤ ºÎºĞÀº ³ëÃâ½ÃÅ´
+    /// Mask: íŠ¹ì • ë¶€ë¶„ì€ ê°ì¶”ê³  íŠ¹ì • ë¶€ë¶„ì€ ë…¸ì¶œì‹œí‚´
     /// </summary>
 
     [SerializeField] private LayerMask _targetMask; // .. 00000010 00000000
-    [SerializeField] private RaceManager _raceManager; //RaceManager ÂüÁ¶
+    [SerializeField] private RaceManager _raceManager; //RaceManager ì°¸ì¡°
     private void OnTriggerEnter(Collider other)
     {
-        // *°ø½ÄÃ³·³ ¾Ï±â*
+        // *ê³µì‹ì²˜ëŸ¼ ì•”ê¸°*
         if((1<<other.gameObject.layer & _targetMask) > 0)
         {
             _raceManager.RegisterFinishedHorse(other.GetComponent<Horse>());
-            // goalline¿¡ ´ê´Â horse´Â rigidbodyÀÌ°í, ´ê±â À§ÇØ¼­´Â ºÎÇÇ¸¦ °¡Á®¾ß ÇÏ¹Ç·Î, ºÎÇÇ¸¦ ÀÇ¹ÌÇÏ´Â capsuleColider¸¦ È£Ãâ
+            // goallineì— ë‹¿ëŠ” horseëŠ” rigidbodyì´ê³ , ë‹¿ê¸° ìœ„í•´ì„œëŠ” ë¶€í”¼ë¥¼ ê°€ì ¸ì•¼ í•˜ë¯€ë¡œ, ë¶€í”¼ë¥¼ ì˜ë¯¸í•˜ëŠ” capsuleColiderë¥¼ í˜¸ì¶œ
         }
     }
 }

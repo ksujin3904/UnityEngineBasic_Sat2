@@ -6,8 +6,8 @@ public class Horse : MonoBehaviour
 {
     public bool doMove;
     [SerializeField]private float _speed;
-    [Range(0.0f,1.0f)] //unity¿£Áø¿¡¼­ »ç¿ë°¡´ÉÇÑ ¹üÀ§ Á¤ÀÇ
-    [SerializeField]private float _stability; // ¾ÈÁ¤¼ºÀÇ Ã´µµ: ¸»ÀÌ ¾ó¸¶³ª ¾ÈÁ¤ÀûÀ¸·Î ´Ş¸®´ÂÁö
+    [Range(0.0f,1.0f)] //unityì—”ì§„ì—ì„œ ì‚¬ìš©ê°€ëŠ¥í•œ ë²”ìœ„ ì •ì˜
+    [SerializeField]private float _stability; // ì•ˆì •ì„±ì˜ ì²™ë„: ë§ì´ ì–¼ë§ˆë‚˜ ì•ˆì •ì ìœ¼ë¡œ ë‹¬ë¦¬ëŠ”ì§€
     [Range (0.0f,1.0f)]
     [SerializeField] private float _stamina;
     private float _speedRefreshTimeMark;
@@ -30,17 +30,17 @@ public class Horse : MonoBehaviour
         {
             RefreshSpeed();
             RefreshStamina();
-            Move(); // doMove°¡ tureÀÏ ¶§ Move ÇÔ¼ö ½ÇÇà
+            Move(); // doMoveê°€ tureì¼ ë•Œ Move í•¨ìˆ˜ ì‹¤í–‰
         }
     }
 
     private void Move()
     {
-        // RigidBody¸¦ °¡Áö´Â GameObjectÀÇ TransformÀ» ·±Å¸ÀÓ¿¡ Á÷Á¢ ¼öÁ¤ÇÏ¸é speed¿¡ ´ëÇØ ¿¬»êÀ» ´Ù½Ã ¼öÇàÇØ¾ßÇÏ±â ¶§¹®¿¡
-        // RigidBody.Move.Position µîÀ» ÀÌ¿ëÇØ¼­ ¼öÁ¤ÇØ¾ß ÇÔ.
-        // (ÀĞ´Â °ÍÀº RigidBody.position ÀÌ³ª Transform.positionÀÌ³ª º° Â÷ÀÌ ¾øÀ½)
-                                                                    // ³­¼ö»ı¼º
-        _rb.MovePosition(transform.position + Vector3.forward * Random.Range(_stability, 1.0f) * _speed * Time.fixedDeltaTime); // ¾ÈÁ¤¼º°ú 1.0 »çÀÌ;
+        // RigidBodyë¥¼ ê°€ì§€ëŠ” GameObjectì˜ Transformì„ ëŸ°íƒ€ì„ì— ì§ì ‘ ìˆ˜ì •í•˜ë©´ speedì— ëŒ€í•´ ì—°ì‚°ì„ ë‹¤ì‹œ ìˆ˜í–‰í•´ì•¼í•˜ê¸° ë•Œë¬¸ì—
+        // RigidBody.Move.Position ë“±ì„ ì´ìš©í•´ì„œ ìˆ˜ì •í•´ì•¼ í•¨.
+        // (ì½ëŠ” ê²ƒì€ RigidBody.position ì´ë‚˜ Transform.positionì´ë‚˜ ë³„ ì°¨ì´ ì—†ìŒ)
+                                                                    // ë‚œìˆ˜ìƒì„±
+        _rb.MovePosition(transform.position + Vector3.forward * Random.Range(_stability, 1.0f) * _speed * Time.fixedDeltaTime); // ì•ˆì •ì„±ê³¼ 1.0 ì‚¬ì´;
     }
 
     private void RefreshSpeed()
@@ -50,7 +50,7 @@ public class Horse : MonoBehaviour
             _speedModified = Random.Range(_stability, 1.0f) * _speed * (_staminaModified / _stamina);
         }
     }
-
+    
 
     private void RefreshStamina()
     {
