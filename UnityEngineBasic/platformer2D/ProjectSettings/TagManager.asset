@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - Ground
+  - 
+  - 
+  - PlayerTrigger
+  - PlayerCollision
+  - 
+  - 
+  - 
+  - EnemyTrigger
+  - EnemyCollision
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 1140369301
+    locked: 0
+  - name: BackGround/Prob
+    uniqueID: 920328329
+    locked: 0
+  - name: BackGroundInteractable
+    uniqueID: 1379554291
+    locked: 0
+  - name: Player
+    uniqueID: 667606139
+    locked: 0
+  - name: Enemy
+    uniqueID: 1502164725
+    locked: 0
+  - name: Effect
+    uniqueID: 524163129
+    locked: 0
